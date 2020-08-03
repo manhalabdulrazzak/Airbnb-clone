@@ -1,20 +1,117 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Bienvenue sur Homebnb{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="container mt-4">
+        <div class="jumbotron">
+            <h1 class="display-3">Bienvenue sur Homebnb</h1>
+            <p class="lead">Nous mettons en relations les voyageurs et les propriétaires qui veulent profiter d'opportunités et gagner de l'argent en proposant leur bien à la location !</p>
+            <hr class="my-4">
+            <p>Vous êtes voyageur ? Et vous voulez voir où loger pour votre prochain déplacement ?</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Voir nos annonces</a>
+            </p>
+        </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+        <h2>Nos appartements stars !</h2>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/zaidalfares/Desktop/symfony/HomeBnb/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/zaidalfares/Desktop/symfony/HomeBnb/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
-</div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card bg-light mb-3">
+                    <div class="card-header text-center">
+                        3 chambres, <strong>49&euro; par nuit</strong><br>
+                        Pas encore noté
+                    </div>
+
+                    <img src="http://placehold.it/1000x400" alt="Image de l'appartement" style="height: 200px; width: 100%; display: block;">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Appartement de fou !
+                        </h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nam sunt ut soluta quam quaerat rem? Esse, omnis dolores blanditiis velit aliquam odit cupiditate ex recusandae architecto, nesciunt fugit hic!
+                        </p>
+                        <a href="#" class="btn btn-secondary">Voir l'annonce</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light mb-3">
+                    <div class="card-header text-center">
+                        3 chambres, <strong>49&euro; </strong>par nuit<br>
+                        Pas encore noté
+                    </div>
+
+                    <img src="http://placehold.it/1000x400" alt="Image de l'appartement" style="height: 200px; width: 100%; display: block;">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Appartement de fou !
+                        </h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nam sunt ut soluta quam quaerat rem? Esse, omnis dolores blanditiis velit aliquam odit cupiditate ex recusandae architecto, nesciunt fugit hic!
+                        </p>
+                        <a href="#" class="btn btn-secondary">Voir l'annonce</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light mb-3">
+                    <div class="card-header text-center">
+                        3 chambres, <strong>49&euro; par nuit</strong><br>
+                        Pas encore noté
+                    </div>
+
+                    <img src="http://placehold.it/1000x400" alt="Image de l'appartement" style="height: 200px; width: 100%; display: block;">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Appartement de fou !
+                        </h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nam sunt ut soluta quam quaerat rem? Esse, omnis dolores blanditiis velit aliquam odit cupiditate ex recusandae architecto, nesciunt fugit hic!
+                        </p>
+                        <a href="#" class="btn btn-secondary">Voir l'annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-4">Nos propriétaires stars !</h2>
+
+        <div class="row mt-4">
+            <div class="col">
+                <div class="card border-secondary mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Emilien Gantois
+                        </h4>
+                        <hr>
+                        <div class="card-text">
+                            <img src="http://placehold.it/64x64" alt="Avatar de Emilien Gantois" class="float-left mr-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cum minus delectus pariatur officiis quidem et inventore consectetur beatae itaque ratione soluta, vitae optio libero animi, eveniet, reprehenderit debitis expedita.</p>
+                            <a href="#" class="btn btn-success">Voir l'utilisateur</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-secondary mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Emilien Gantois
+                        </h4>
+                        <hr>
+                        <div class="card-text">
+                            <img src="http://placehold.it/64x64" alt="Avatar de Emilien Gantois" class="float-left mr-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cum minus delectus pariatur officiis quidem et inventore consectetur beatae itaque ratione soluta, vitae optio libero animi, eveniet, reprehenderit debitis expedita.</p>
+                            <a href="#" class="btn btn-success">Voir l'utilisateur</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
